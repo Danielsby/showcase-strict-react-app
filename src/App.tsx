@@ -5,21 +5,19 @@ import ComponentContainer from './ComponentContainer'
 function App () {
   return (
     <div className="App">
-      <React.StrictMode>
-        <header className="App-header">
-          <h1>Strict app</h1>
-        </header>
+      <header className="App-header">
+        <h1>Strict app</h1>
+      </header>
 
-        <main>
-          <ErrorBoundaries>
-            <ComponentContainer />
-          </ErrorBoundaries>
-        </main>
+      <main>
+        <ErrorBoundaries>
+          <ComponentContainer />
+        </ErrorBoundaries>
+      </main>
 
-        <footer>
-          <p>2022</p>
-        </footer>
-      </React.StrictMode>
+      <footer>
+        <p>2022</p>
+      </footer>
     </div>
   )
 }
